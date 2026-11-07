@@ -87,6 +87,8 @@ services:
       S3_ACCESS_KEY_ID: minioadmin
       S3_SECRET_ACCESS_KEY: minioadmin
       S3_BUCKET: open-short-url
+      #OJO
+      WEBHOOK_SECRET_KEY: ${WEBHOOK_SECRET_KEY}
     ports:
       - '4101:4101'
     depends_on:
