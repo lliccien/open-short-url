@@ -63,7 +63,7 @@ services:
 
   # --- MinIO (S3-compatible storage) ---
   minio:
-    image: minio/minio:latest
+    image: docker.io/pgsty/silo:RELEASE.2026-10-26T00-00-00Z
     restart: unless-stopped
     command: server /data --console-address ":9001"
     environment:
