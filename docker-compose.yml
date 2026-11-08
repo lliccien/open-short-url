@@ -112,6 +112,7 @@ services:
       S3_GLOBAL_PREFIX: ${S3_GLOBAL_PREFIX:-}
       #OJO
       WEBHOOK_SECRET_KEY: ${WEBHOOK_SECRET_KEY}
+      TURNSTILE_SECRET_KEY: ${TURNSTILE_SECRET_KEY}
     ports:
       - '${BACKEND_PORT:-4101}:4101'
     depends_on:
